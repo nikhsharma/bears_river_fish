@@ -10,7 +10,7 @@ end
 
 def eats_fish(fish, river)
   stomach.push(fish)
-  river.fish_eaten()
+  river.fish_eaten(fish)
 end
 
 def roar()

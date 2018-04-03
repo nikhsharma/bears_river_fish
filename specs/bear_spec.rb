@@ -10,7 +10,9 @@ class BearTest < MiniTest::Test
 def setup()
   @bear = Bear.new("Yogi", [])
   @fish = Fish.new("Nemo")
-  @river = River.new("Zambizi", 10 )
+  @fish2 = Fish.new("Nemee")
+  @fishes = [@fish, @fish2]
+  @river = River.new("Zambizi", @fishes )
 end
 
 def test_name()
@@ -27,8 +29,8 @@ def test_eats_fish()
 end
 
 def test_eats_fish__removed_from_river()
-  @bear.eats_fish(@fish, @river)
-  assert_equal(9, @river.number_of_fish)
+  @bear.eats_fish(@fish2, @river)
+  assert_equal([@fish], @river.array_of_fish)
 end
 
 def test_roar()
