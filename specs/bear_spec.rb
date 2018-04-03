@@ -35,4 +35,9 @@ def test_roar()
   assert_equal("ROAR!", @bear.roar)
 end
 
+def test_food_count()
+@bear.eats_fish(@fish, @river)
+assert_equal(1, @bear.food_count)
+end
+
 end

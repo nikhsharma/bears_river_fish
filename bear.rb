@@ -13,8 +13,12 @@ def eats_fish(fish, river)
   river.fish_eaten()
 end
 
-def roar
+def roar()
   return "ROAR!"
+end
+
+def food_count()
+  return @stomach.count
 end
 
 end
