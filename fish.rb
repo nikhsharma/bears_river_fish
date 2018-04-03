@@ -6,4 +6,12 @@ class Fish
     @name = name
   end
 
+
+#
+# def eaten
+#   if @Bear.eat_fish
+#     self.delete
+# end
+
+
 end

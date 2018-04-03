@@ -7,4 +7,10 @@ def initialize(name, stomach)
 @stomach = stomach
 end
 
+
+def eats_fish(fish)
+  stomach.push(fish.name)
+end
+
+
 end
