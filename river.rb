@@ -8,12 +8,12 @@ class River
     @array_of_fish = array_of_fish
   end
 
-def fish_eaten(fish)
-@array_of_fish.delete(fish)
-end
-
-def fish_count()
-  @array_of_fish.count
-end
+  def fish_eaten(fish)
+    @array_of_fish.delete(fish)
+  end
+  
+  def fish_count()
+    @array_of_fish.count
+  end
 
 end

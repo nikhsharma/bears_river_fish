@@ -12,16 +12,16 @@ class RiverTest < MiniTest::Test
     @fish = Fish.new("Nemo")
     @fish2 = Fish.new("Nemee")
     @fish3 = Fish.new("Nemoo")
-    @fishes = [@fish, @fish2, @fish3]
-    @river = River.new("Zambizi", @fishes )
+    @array_of_fish = [@fish, @fish2, @fish3]
+    @river = River.new("Zambizi", @array_of_fish )
   end
-
+  
   def test_name()
     assert_equal("Zambizi", @river.name)
   end
 
   def test_number_of_fish
-    assert_equal(@fishes, @river.array_of_fish)
+    assert_equal(@array_of_fish, @river.array_of_fish)
   end
 
   def test_fish_eaten()
