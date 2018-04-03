@@ -13,4 +13,8 @@ def test_name
   assert_equal("Yogi", @bear.name)
 end
 
+def test_stomach
+  assert_equal([], @bear.stomach)
+end
+
 end
