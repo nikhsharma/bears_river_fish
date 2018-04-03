@@ -7,10 +7,11 @@ class Fish
   end
 
 
-#
-# def eaten
-#   if @Bear.eat_fish
-#     self.delete
+
+# def eaten(fish)
+#   if @Bear.eats_fish
+#     return fish = nil
+#   end
 # end
 
 

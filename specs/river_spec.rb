@@ -3,9 +3,10 @@ require('minitest/rg')
 
 require_relative('../river.rb')
 
+
 class RiverTest < MiniTest::Test
 
-  def setup
+  def setup()
     @river = River.new("Zambizi", 10 )
   end
 
@@ -15,6 +16,11 @@ class RiverTest < MiniTest::Test
 
   def test_number_of_fish
     assert_equal(10, @river.number_of_fish)
+  end
+
+  def test_fish_eaten()
+    @river.fish_eaten
+    assert_equal(9, @river.number_of_fish)
   end
 
 end

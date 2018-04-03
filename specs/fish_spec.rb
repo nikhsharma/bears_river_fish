@@ -5,11 +5,11 @@ require_relative('../fish.rb')
 
 class FishTest < MiniTest::Test
 
-def setup
+def setup()
   @fish = Fish.new("Nemo")
 end
 
-def test_name
+def test_name()
   assert_equal("Nemo", @fish.name)
 end
 

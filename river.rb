@@ -7,4 +7,8 @@ class River
     @number_of_fish = number_of_fish
   end
 
+def fish_eaten()
+ @number_of_fish -= 1
+end
+
 end

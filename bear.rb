@@ -8,9 +8,16 @@ def initialize(name, stomach)
 end
 
 
-def eats_fish(fish)
-  stomach.push(fish.name)
+def eats_fish(fish, river)
+  stomach.push(fish)
+  river.fish_eaten()
 end
+
+# def fish_eaten(fish)
+#   if @bear.eats_fish(fish)
+#     number_of_fish -= 1
+#   end
+# end
 
 
 end
