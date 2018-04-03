@@ -31,4 +31,8 @@ def test_eats_fish__removed_from_river()
   assert_equal(9, @river.number_of_fish)
 end
 
+def test_roar()
+  assert_equal("ROAR!", @bear.roar)
+end
+
 end

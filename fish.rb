@@ -8,11 +8,4 @@ class Fish
 
 
 
-# def eaten(fish)
-#   if @Bear.eats_fish
-#     return fish = nil
-#   end
-# end
-
-
 end

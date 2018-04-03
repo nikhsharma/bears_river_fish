@@ -13,11 +13,8 @@ def eats_fish(fish, river)
   river.fish_eaten()
 end
 
-# def fish_eaten(fish)
-#   if @bear.eats_fish(fish)
-#     number_of_fish -= 1
-#   end
-# end
-
+def roar
+  return "ROAR!"
+end
 
 end
